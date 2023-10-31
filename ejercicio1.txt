@@ -30,6 +30,7 @@ contract FabricaContract {
 
       uint randId = _generarIdAleatorio(_nombre);
        _crearProducto(_nombre,randId);
+      Propiedad(randId);
 
     }
 
