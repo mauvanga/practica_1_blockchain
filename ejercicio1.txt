@@ -39,7 +39,7 @@ contract FabricaContract {
 
     mapping (address => uint) propietarioProductos;
 
-    function Propiedad(uint _productoId) public {
+    function Propiedad(uint _productoId) private {
 
      productoAPropietario[_productoId] = msg.sender;
      propietarioProductos[msg.sender] += 1;
